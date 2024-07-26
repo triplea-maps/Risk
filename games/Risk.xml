@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<!DOCTYPE game SYSTEM "game.dtd">
+<game>
+    <info name="Risk" version="1.0"/>
+    <loader javaClass="games.strategy.triplea.TripleA"/>
+    <triplea minimumVersion="1.6.1"/>
+    <diceSides value="6"/>
+
+    <map>
+        <!-- Territory Definitions -->
+        <territory name="Afghanistan"/>
+        <territory name="Alaska"/>
+        <territory name="Alberta"/>
+        <territory name="Argentina"/>
+        <territory name="Brazil"/>
+        <territory name="Central America"/>
+        <territory name="China"/>
+        <territory name="Congo"/>
+        <territory name="East Africa"/>
+        <territory name="Eastern Australia"/>
+        <territory name="Eastern USA"/>
+        <territory name="Egypt"/>
+        <territory name="Great Britain"/>
+        <territory name="Greenland"/>
+        <territory name="Iceland"/>
+        <territory name="India"/>
+        <territory name="Indonesia"/>
+        <territory name="Irkutsk"/>
+        <territory name="Japan"/>
+        <territory name="Kamchatka"/>
+        <territory name="Madagascar"/>
+        <territory name="Middle East"/>
+        <territory name="Mongolia"/>
+        <territory name="New Guinea"/>
+        <territory name="North Africa"/>
+        <territory name="Northern Europe"/>
+        <territory name="Northwest Territory"/>
+        <territory name="Ontario"/>
+        <territory name="Peru"/>
+        <territory name="Quebec"/>
+        <territory name="Scandinavia"/>
+        <territory name="Siam"/>
+        <territory name="Siberia"/>
+        <territory name="South Africa"/>
+        <territory name="Southern Europe"/>
+        <territory name="Ukraine"/>
+        <territory name="Ural"/>
+        <territory name="Venezuela"/>
+        <territory name="Western Australia"/>
+        <territory name="Western Europe"/>
+        <territory name="Western USA"/>
+        <territory name="Yakutsk"/>
+        <!-- Territory Connections -->
+        <connection t1="Afghanistan" t2="Ukraine"/>
+        <connection t1="Afghanistan" t2="Middle East"/>
+        <connection t1="Afghanistan" t2="China"/>
+        <connection t1="Afghanistan" t2="Ural"/>
+        <connection t1="Afghanistan" t2="India"/>
+        <connection t1="Alaska" t2="Kamchatka"/>
+        <connection t1="Alaska" t2="Northwest Territory"/>
+        <connection t1="Alaska" t2="Alberta"/>
+        <connection t1="Alberta" t2="Western USA"/>
+        <connection t1="Alberta" t2="Northwest Territory"/>
+        <connection t1="Alberta" t2="Ontario"/>
+        <connection t1="Argentina" t2="Brazil"/>
+        <connection t1="Argentina" t2="Peru"/>
+        <connection t1="Brazil" t2="North Africa"/>
+        <connection t1="Brazil" t2="Venezuela"/>
+        <connection t1="Brazil" t2="Peru"/>
+        <connection t1="Central America" t2="Eastern USA"/>
+        <connection t1="Central America" t2="Western USA"/>
+        <connection t1="Central America" t2="Venezuela"/>
+        <connection t1="China" t2="Siberia"/>
+        <connection t1="China" t2="Siam"/>
+        <connection t1="China" t2="Mongolia"/>
+        <connection t1="China" t2="Ural"/>
+        <connection t1="China" t2="India"/>
+        <connection t1="Congo" t2="North Africa"/>
+        <connection t1="Congo" t2="East Africa"/>
+        <connection t1="Congo" t2="South Africa"/>
+        <connection t1="East Africa" t2="Egypt"/>
+        <connection t1="East Africa" t2="North Africa"/>
+        <connection t1="East Africa" t2="South Africa"/>
+        <connection t1="East Africa" t2="Middle East"/>
+        <connection t1="East Africa" t2="Madagascar"/>
+        <connection t1="Eastern Australia" t2="New Guinea"/>
+        <connection t1="Eastern Australia" t2="Western Australia"/>
+        <connection t1="Eastern USA" t2="Quebec"/>
+        <connection t1="Eastern USA" t2="Western USA"/>
+        <connection t1="Eastern USA" t2="Ontario"/>
+        <connection t1="Egypt" t2="North Africa"/>
+        <connection t1="Egypt" t2="Middle East"/>
+        <connection t1="Egypt" t2="Southern Europe"/>
+        <connection t1="Great Britain" t2="Scandinavia"/>
+        <connection t1="Great Britain" t2="Western Europe"/>
+        <connection t1="Great Britain" t2="Northern Europe"/>
+        <connection t1="Great Britain" t2="Iceland"/>
+        <connection t1="Greenland" t2="Quebec"/>
+        <connection t1="Greenland" t2="Northwest Territory"/>
+        <connection t1="Greenland" t2="Iceland"/>
+        <connection t1="Greenland" t2="Ontario"/>
+        <connection t1="Iceland" t2="Scandinavia"/>
+        <connection t1="India" t2="Siam"/>
+        <connection t1="India" t2="Middle East"/>
+        <connection t1="Indonesia" t2="New Guinea"/>
+        <connection t1="Indonesia" t2="Siam"/>
+        <connection t1="Indonesia" t2="Western Australia"/>
+        <connection t1="Irkutsk" t2="Siberia"/>
+        <connection t1="Irkutsk" t2="Mongolia"/>
+        <connection t1="Irkutsk" t2="Kamchatka"/>
+        <connection t1="Irkutsk" t2="Yakutsk"/>
+        <connection t1="Japan" t2="Mongolia"/>
+        <connection t1="Japan" t2="Kamchatka"/>
+        <connection t1="Kamchatka" t2="Mongolia"/>
+        <connection t1="Kamchatka" t2="Yakutsk"/>
+        <connection t1="Madagascar" t2="South Africa"/>
+        <connection t1="Middle East" t2="Ukraine"/>
+        <connection t1="Middle East" t2="Southern Europe"/>
+        <connection t1="Mongolia" t2="Siberia"/>
+        <connection t1="New Guinea" t2="Western Australia"/>
+        <connection t1="North Africa" t2="Western Europe"/>
+        <connection t1="Northern Europe" t2="Scandinavia"/>
+        <connection t1="Northern Europe" t2="Western Europe"/>
+        <connection t1="Northern Europe" t2="Ukraine"/>
+        <connection t1="Northern Europe" t2="Southern Europe"/>
+        <connection t1="Northwest Territory" t2="Ontario"/>
+        <connection t1="Ontario" t2="Quebec"/>
+        <connection t1="Ontario" t2="Western USA"/>
+        <connection t1="Peru" t2="Venezuela"/>
+        <connection t1="Scandinavia" t2="Ukraine"/>
+        <connection t1="Siberia" t2="Yakutsk"/>
+        <connection t1="Siberia" t2="Ural"/>
+        <connection t1="Southern Europe" t2="Western Europe"/>
+        <connection t1="Southern Europe" t2="Ukraine"/>
+        <connection t1="Ukraine" t2="Ural"/>
+    </map>
+
+    <resourceList>
+        <resource name="PUs"/>
+    </resourceList>
+
+    <playerList>
+        <player name="Chinese" optional="false"/>
+        <player name="Americans" optional="false"/>
+        <player name="Germans" optional="false"/>
+        <player name="Italians" optional="false"/>
+        <player name="Japanese" optional="false"/>
+        <player name="British" optional="false"/>
+        <alliance player="Japanese" alliance="A"/>
+        <alliance player="Chinese" alliance="A"/>
+        <alliance player="Germans" alliance="B"/>
+        <alliance player="British" alliance="B"/>
+        <alliance player="Italians" alliance="A"/>
+        <alliance player="Americans" alliance="B"/>
+    </playerList>
+
+    <unitList>
+        <unit name="armour"/>
+        <unit name="bomber"/>
+        <unit name="infantry"/>
+        <unit name="aaGun"/>
+        <unit name="factory"/>
+        <unit name="fighter"/>
+        <unit name="artillery"/>
+    </unitList>
+
+    <gamePlay>
+        <delegate name="endTurnNoPU" javaClass="games.strategy.triplea.delegate.NoPUEndTurnDelegate" display="Turn Complete"/>
+        <delegate name="tech_activation" javaClass="games.strategy.triplea.delegate.TechActivationDelegate" display="Activate Technology"/>
+        <delegate name="purchase" javaClass="games.strategy.triplea.delegate.PurchaseDelegate" display="Purchase Units"/>
+        <delegate name="tech" javaClass="games.strategy.triplea.delegate.TechnologyDelegate" display="Research Technology"/>
+        <delegate name="endRound" javaClass="games.strategy.triplea.delegate.EndRoundDelegate" display="Round Complete"/>
+        <delegate name="battle" javaClass="games.strategy.triplea.delegate.BattleDelegate" display="Combat"/>
+        <delegate name="endTurn" javaClass="games.strategy.triplea.delegate.EndTurnDelegate" display="Turn Complete"/>
+        <delegate name="placeBid" javaClass="games.strategy.triplea.delegate.BidPlaceDelegate" display="Bid Placement"/>
+        <delegate name="purchaseNoPU" javaClass="games.strategy.triplea.delegate.NoPUPurchaseDelegate" display="Purchase Units"/>
+        <delegate name="initDelegate" javaClass="games.strategy.triplea.delegate.InitializationDelegate" display="Initializing Delegates"/>
+        <delegate name="place" javaClass="games.strategy.triplea.delegate.PlaceDelegate" display="Place Units"/>
+        <delegate name="bid" javaClass="games.strategy.triplea.delegate.BidPurchaseDelegate" display="Bid Purchase"/>
+        <delegate name="move" javaClass="games.strategy.triplea.delegate.MoveDelegate" display="Combat Move"/>
+
+        <sequence>
+            <step name="gameInitDelegate" delegate="initDelegate" display="Initializing Delegates" maxRunCount="1"/>
+            <step name="AmericansBidPlace" delegate="placeBid" player="Americans" display="Bid Placement" maxRunCount="1"/>
+            <step name="BritishBidPlace" delegate="placeBid" player="British" display="Bid Placement" maxRunCount="1"/>
+            <step name="ChineseBidPlace" delegate="placeBid" player="Chinese" display="Bid Placement" maxRunCount="1"/>
+            <step name="GermansBidPlace" delegate="placeBid" player="Germans" display="Bid Placement" maxRunCount="1"/>
+            <step name="ItaliansBidPlace" delegate="placeBid" player="Italians" display="Bid Placement" maxRunCount="1"/>
+            <step name="JapaneseBidPlace" delegate="placeBid" player="Japanese" display="Bid Placement" maxRunCount="1"/>
+            <step name="JapaneseTech" delegate="tech" player="Japanese" display="Research Technology"/>
+            <step name="JapanesePurchase" delegate="purchase" player="Japanese" display="Purchase Units"/>
+            <step name="JapaneseCombatMove" delegate="move" player="Japanese" display="Combat Move"/>
+            <step name="JapaneseBattle" delegate="battle" player="Japanese" display="Combat"/>
+            <step name="JapaneseNonCombatMove" delegate="move" player="Japanese" display="Non Combat Move"/>
+            <step name="JapanesePlace" delegate="place" player="Japanese" display="Place Units"/>
+            <step name="JapaneseTechActivation" delegate="tech_activation" player="Japanese" display="Activate Technology"/>
+            <step name="JapaneseEndTurn" delegate="endTurn" player="Japanese" display="Turn Complete"/>
+            <step name="GermansTech" delegate="tech" player="Germans" display="Research Technology"/>
+            <step name="GermansPurchase" delegate="purchase" player="Germans" display="Purchase Units"/>
+            <step name="GermansCombatMove" delegate="move" player="Germans" display="Combat Move"/>
+            <step name="GermansBattle" delegate="battle" player="Germans" display="Combat"/>
+            <step name="GermansNonCombatMove" delegate="move" player="Germans" display="Non Combat Move"/>
+            <step name="GermansPlace" delegate="place" player="Germans" display="Place Units"/>
+            <step name="GermansTechActivation" delegate="tech_activation" player="Germans" display="Activate Technology"/>
+            <step name="GermansEndTurn" delegate="endTurn" player="Germans" display="Turn Complete"/>
+            <step name="BritishTech" delegate="tech" player="British" display="Research Technology"/>
+            <step name="BritishPurchase" delegate="purchase" player="British" display="Purchase Units"/>
+            <step name="BritishCombatMove" delegate="move" player="British" display="Combat Move"/>
+            <step name="BritishBattle" delegate="battle" player="British" display="Combat"/>
+            <step name="BritishNonCombatMove" delegate="move" player="British" display="Non Combat Move"/>
+            <step name="BritishPlace" delegate="place" player="British" display="Place Units"/>
+            <step name="BritishTechActivation" delegate="tech_activation" player="British" display="Activate Technology"/>
+            <step name="BritishEndTurn" delegate="endTurn" player="British" display="Turn Complete"/>
+            <step name="ItaliansTech" delegate="tech" player="Italians" display="Research Technology"/>
+            <step name="ItaliansPurchase" delegate="purchase" player="Italians" display="Purchase Units"/>
+            <step name="ItaliansCombatMove" delegate="move" player="Italians" display="Combat Move"/>
+            <step name="ItaliansBattle" delegate="battle" player="Italians" display="Combat"/>
+            <step name="ItaliansNonCombatMove" delegate="move" player="Italians" display="Non Combat Move"/>
+            <step name="ItaliansPlace" delegate="place" player="Italians" display="Place Units"/>
+            <step name="ItaliansTechActivation" delegate="tech_activation" player="Italians" display="Activate Technology"/>
+            <step name="ItaliansEndTurn" delegate="endTurn" player="Italians" display="Turn Complete"/>
+            <step name="ChineseTech" delegate="tech" player="Chinese" display="Research Technology"/>
+            <step name="ChinesePurchase" delegate="purchase" player="Chinese" display="Purchase Units"/>
+            <step name="ChineseCombatMove" delegate="move" player="Chinese" display="Combat Move"/>
+            <step name="ChineseBattle" delegate="battle" player="Chinese" display="Combat"/>
+            <step name="ChineseNonCombatMove" delegate="move" player="Chinese" display="Non Combat Move"/>
+            <step name="ChinesePlace" delegate="place" player="Chinese" display="Place Units"/>
+            <step name="ChineseTechActivation" delegate="tech_activation" player="Chinese" display="Activate Technology"/>
+            <step name="ChineseEndTurn" delegate="endTurn" player="Chinese" display="Turn Complete"/>
+            <step name="AmericansTech" delegate="tech" player="Americans" display="Research Technology"/>
+            <step name="AmericansPurchase" delegate="purchase" player="Americans" display="Purchase Units"/>
+            <step name="AmericansCombatMove" delegate="move" player="Americans" display="Combat Move"/>
+            <step name="AmericansBattle" delegate="battle" player="Americans" display="Combat"/>
+            <step name="AmericansNonCombatMove" delegate="move" player="Americans" display="Non Combat Move"/>
+            <step name="AmericansPlace" delegate="place" player="Americans" display="Place Units"/>
+            <step name="AmericansTechActivation" delegate="tech_activation" player="Americans" display="Activate Technology"/>
+            <step name="AmericansEndTurn" delegate="endTurn" player="Americans" display="Turn Complete"/>
+            <step name="endRoundStep" delegate="endRound" display="Round Complete"/>
+        </sequence>
+    </gamePlay>
+
+    <production>
+        <productionRule name="buyAAGun">
+            <cost resource="PUs" quantity="5"/>
+            <result resourceOrUnit="aaGun" quantity="1"/>
+        </productionRule>
+        <productionRule name="buyFactory">
+            <cost resource="PUs" quantity="15"/>
+            <result resourceOrUnit="factory" quantity="1"/>
+        </productionRule>
+        <productionRule name="buyArmour">
+            <cost resource="PUs" quantity="5"/>
+            <result resourceOrUnit="armour" quantity="1"/>
+        </productionRule>
+        <productionRule name="buyFighter">
+            <cost resource="PUs" quantity="10"/>
+            <result resourceOrUnit="fighter" quantity="1"/>
+        </productionRule>
+        <productionRule name="buyArtillery">
+            <cost resource="PUs" quantity="4"/>
+            <result resourceOrUnit="artillery" quantity="1"/>
+        </productionRule>
+        <productionRule name="buyBomber">
+            <cost resource="PUs" quantity="15"/>
+            <result resourceOrUnit="bomber" quantity="1"/>
+        </productionRule>
+        <productionRule name="buyInfantry">
+            <cost resource="PUs" quantity="3"/>
+            <result resourceOrUnit="infantry" quantity="1"/>
+        </productionRule>
+
+
+        <productionFrontier name="production">
+            <frontierRules name="buyInfantry"/>
+            <frontierRules name="buyArtillery"/>
+            <frontierRules name="buyArmour"/>
+            <frontierRules name="buyFighter"/>
+            <frontierRules name="buyBomber"/>
+            <frontierRules name="buyAAGun"/>
+            <frontierRules name="buyFactory"/>
+        </productionFrontier>
+
+        <playerProduction player="Chinese" frontier="production"/>
+        <playerProduction player="Americans" frontier="production"/>
+        <playerProduction player="Germans" frontier="production"/>
+        <playerProduction player="Italians" frontier="production"/>
+        <playerProduction player="Japanese" frontier="production"/>
+        <playerProduction player="British" frontier="production"/>
+    </production>
+
+    <attachmentList>
+        <attachment name="unitAttachment" attachTo="infantry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="movement" value="1"/>
+            <option name="transportCost" value="2"/>
+            <option name="attack" value="1"/>
+            <option name="defense" value="2"/>
+            <option name="artillerySupportable" value="true"/>
+        </attachment>
+        <attachment name="unitAttachment" attachTo="artillery" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="movement" value="1"/>
+            <option name="transportCost" value="3"/>
+            <option name="attack" value="2"/>
+            <option name="defense" value="2"/>
+            <option name="artillery" value="true"/>
+        </attachment>
+        <attachment name="unitAttachment" attachTo="armour" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="movement" value="2"/>
+            <option name="transportCost" value="3"/>
+            <option name="canBlitz" value="true"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
+        </attachment>
+        <attachment name="unitAttachment" attachTo="fighter" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="movement" value="4"/>
+            <option name="carrierCost" value="1"/>
+            <option name="isAir" value="true"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="4"/>
+        </attachment>
+        <attachment name="unitAttachment" attachTo="bomber" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="movement" value="6"/>
+            <option name="isAir" value="true"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="1"/>
+            <option name="isStrategicBomber" value="true"/>
+        </attachment>
+        <attachment name="unitAttachment" attachTo="factory" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="isFactory" value="true"/>
+        </attachment>
+        <attachment name="unitAttachment" attachTo="aaGun" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="isAA" value="true"/>
+            <option name="transportCost" value="3"/>
+            <option name="movement" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Afghanistan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Alaska" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Alberta" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Argentina" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+            <option name="capital" value="Japanese"/>
+<option name="originalFactory" value="true" />
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Brazil" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Central America" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="China" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+            <option name="capital" value="Chinese"/>
+<option name="originalFactory" value="true" />
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Congo" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="East Africa" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Eastern Australia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+            <option name="capital" value="British"/>
+<option name="originalFactory" value="true" />
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Eastern USA" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+            <option name="capital" value="Americans"/>
+<option name="originalFactory" value="true" />
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Egypt" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Great Britain" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Greenland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Iceland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="India" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Indonesia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Irkutsk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Japan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Kamchatka" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Madagascar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Middle East" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Mongolia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="New Guinea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="North Africa" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Northern Europe" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+            <option name="capital" value="Germans"/>
+<option name="originalFactory" value="true" />
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Northwest Territory" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Ontario" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Peru" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Quebec" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Scandinavia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Siam" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Siberia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="South Africa" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+            <option name="capital" value="Italians"/>
+<option name="originalFactory" value="true" />
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Southern Europe" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Ukraine" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Ural" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Venezuela" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Western Australia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Western Europe" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Western USA" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+        <attachment name="territoryAttachment" attachTo="Yakutsk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+            <option name="production" value="1"/>
+        </attachment>
+<attachment name="objectiveAttachment1" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+<option name="objectiveValue" value="2"/>
+<option name="alliedOwnershipTerritories" value="Venezuela:Peru:Brazil:Argentina" />
+</attachment> 
+
+<attachment name="objectiveAttachment2" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+<option name="objectiveValue" value="2"/>
+<option name="alliedOwnershipTerritories" value="Indonesia:New Guinea:Western Australia:Eastern Australia" />
+</attachment> 
+
+<attachment name="objectiveAttachment3" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+<option name="objectiveValue" value="3"/>
+<option name="alliedOwnershipTerritories" value="Egypt:Congo:Madagascar:North Africa:East Africa:South Africa" />
+</attachment> 
+
+<attachment name="objectiveAttachment4" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+<option name="objectiveValue" value="5"/>
+<option name="alliedOwnershipTerritories" value="Iceland:Great Britain:Scandinavia:Ukraine:Northern Europe:Southern Europe:Western Europe" />
+</attachment>    
+
+<attachment name="objectiveAttachment5" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+<option name="objectiveValue" value="5"/>
+<option name="alliedOwnershipTerritories" value="Alaska:Northwest Territory:Greenland:Alberta:Ontario:Quebec:Western USA:Eastern USA:Central America" />
+</attachment>    
+
+<attachment name="objectiveAttachment6" attachTo="Chinese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+<option name="objectiveValue" value="7"/>
+<option name="alliedOwnershipTerritories" value="Ural:Siberia:Irkutsk:Yakutsk:Kamchatka:Afghanistan:Middle East:China:Siam:Japan:Mongolia:India" />
+</attachment>    
+
+    </attachmentList>
+    <initialize>
+        <ownerInitialize>
+            <territoryOwner territory="Afghanistan" owner="Chinese"/>
+            <territoryOwner territory="Alaska" owner="Americans"/>
+            <territoryOwner territory="Alberta" owner="Americans"/>
+            <territoryOwner territory="Argentina" owner="Japanese"/>
+            <territoryOwner territory="Brazil" owner="Japanese"/>
+            <territoryOwner territory="Central America" owner="Americans"/>
+            <territoryOwner territory="China" owner="Chinese"/>
+            <territoryOwner territory="Congo" owner="Italians"/>
+            <territoryOwner territory="East Africa" owner="Italians"/>
+            <territoryOwner territory="Eastern Australia" owner="British"/>
+            <territoryOwner territory="Eastern USA" owner="Americans"/>
+            <territoryOwner territory="Egypt" owner="Italians"/>
+            <territoryOwner territory="Great Britain" owner="Germans"/>
+            <territoryOwner territory="Greenland" owner="Americans"/>
+            <territoryOwner territory="Iceland" owner="Germans"/>
+            <territoryOwner territory="India" owner="Chinese"/>
+            <territoryOwner territory="Indonesia" owner="British"/>
+            <territoryOwner territory="Irkutsk" owner="Chinese"/>
+            <territoryOwner territory="Japan" owner="Chinese"/>
+            <territoryOwner territory="Kamchatka" owner="Chinese"/>
+            <territoryOwner territory="Madagascar" owner="Italians"/>
+            <territoryOwner territory="Middle East" owner="Chinese"/>
+            <territoryOwner territory="Mongolia" owner="Chinese"/>
+            <territoryOwner territory="New Guinea" owner="British"/>
+            <territoryOwner territory="North Africa" owner="Italians"/>
+            <territoryOwner territory="Northern Europe" owner="Germans"/>
+            <territoryOwner territory="Northwest Territory" owner="Americans"/>
+            <territoryOwner territory="Ontario" owner="Americans"/>
+            <territoryOwner territory="Peru" owner="Japanese"/>
+            <territoryOwner territory="Quebec" owner="Americans"/>
+            <territoryOwner territory="Scandinavia" owner="Germans"/>
+            <territoryOwner territory="Siam" owner="Chinese"/>
+            <territoryOwner territory="Siberia" owner="Chinese"/>
+            <territoryOwner territory="South Africa" owner="Italians"/>
+            <territoryOwner territory="Southern Europe" owner="Germans"/>
+            <territoryOwner territory="Ukraine" owner="Germans"/>
+            <territoryOwner territory="Ural" owner="Chinese"/>
+            <territoryOwner territory="Venezuela" owner="Japanese"/>
+            <territoryOwner territory="Western Australia" owner="British"/>
+            <territoryOwner territory="Western Europe" owner="Germans"/>
+            <territoryOwner territory="Western USA" owner="Americans"/>
+            <territoryOwner territory="Yakutsk" owner="Chinese"/>
+        </ownerInitialize>
+        <unitInitialize>
+            <unitPlacement unitType="infantry" territory="Afghanistan" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Alaska" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Alberta" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Argentina" quantity="1" owner="Japanese"/>
+            <unitPlacement unitType="factory" territory="Argentina" quantity="1" owner="Japanese"/>
+            <unitPlacement unitType="infantry" territory="Brazil" quantity="1" owner="Japanese"/>
+            <unitPlacement unitType="infantry" territory="Central America" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="China" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="factory" territory="China" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Congo" quantity="1" owner="Italians"/>
+            <unitPlacement unitType="infantry" territory="East Africa" quantity="1" owner="Italians"/>
+            <unitPlacement unitType="infantry" territory="Eastern Australia" quantity="1" owner="British"/>
+            <unitPlacement unitType="factory" territory="Eastern Australia" quantity="1" owner="British"/>
+            <unitPlacement unitType="infantry" territory="Eastern USA" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="factory" territory="Eastern USA" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Egypt" quantity="1" owner="Italians"/>
+            <unitPlacement unitType="infantry" territory="Great Britain" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="infantry" territory="Greenland" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Iceland" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="infantry" territory="India" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Indonesia" quantity="1" owner="British"/>
+            <unitPlacement unitType="infantry" territory="Irkutsk" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Japan" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Kamchatka" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Madagascar" quantity="1" owner="Italians"/>
+            <unitPlacement unitType="infantry" territory="Middle East" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Mongolia" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="New Guinea" quantity="1" owner="British"/>
+            <unitPlacement unitType="infantry" territory="North Africa" quantity="1" owner="Italians"/>
+            <unitPlacement unitType="infantry" territory="Northern Europe" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="factory" territory="Northern Europe" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="infantry" territory="Northwest Territory" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Ontario" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Peru" quantity="1" owner="Japanese"/>
+            <unitPlacement unitType="infantry" territory="Quebec" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Scandinavia" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="infantry" territory="Siam" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Siberia" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="South Africa" quantity="1" owner="Italians"/>
+            <unitPlacement unitType="factory" territory="South Africa" quantity="1" owner="Italians"/>
+            <unitPlacement unitType="infantry" territory="Southern Europe" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="infantry" territory="Ukraine" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="infantry" territory="Ural" quantity="1" owner="Chinese"/>
+            <unitPlacement unitType="infantry" territory="Venezuela" quantity="1" owner="Japanese"/>
+            <unitPlacement unitType="infantry" territory="Western Australia" quantity="1" owner="British"/>
+            <unitPlacement unitType="infantry" territory="Western Europe" quantity="1" owner="Germans"/>
+            <unitPlacement unitType="infantry" territory="Western USA" quantity="1" owner="Americans"/>
+            <unitPlacement unitType="infantry" territory="Yakutsk" quantity="1" owner="Chinese"/>
+        </unitInitialize>
+        <resourceInitialize>
+            <resourceGiven player="Chinese" resource="PUs" quantity="9"/>
+            <resourceGiven player="Americans" resource="PUs" quantity="9"/>
+            <resourceGiven player="Germans" resource="PUs" quantity="9"/>
+            <resourceGiven player="Italians" resource="PUs" quantity="9"/>
+            <resourceGiven player="Japanese" resource="PUs" quantity="9"/>
+            <resourceGiven player="British" resource="PUs" quantity="9"/>
+        </resourceInitialize>
+    </initialize>
+
+<propertyList>
+        <property name="notes">
+            <value>
+            <![CDATA[This scenario uses the map from the classic game of Risk. Alliance A is Asia(Chinese), Africa(Italians) and South America (Japanese).
+Alliance B is North America(Americans), Europe (Germans) and Australia (British). There is bonus for complete control of your starting continent.<br>
+
+South America-2<br>
+Australia-2<br>
+Africa-3<br>
+Europe-5<br>
+North America-6<br>
+Asia-7<br>
+
+There are no sea zones. Units are identitical to Minimap. Unlimited production in your capital factory.<br>
+            ]]>
+            </value>
+        </property>
+        <property name="mapName" value="Risk" editable="false">
+            <string/>
+        </property>
+<property name="National Objectives" value="true" editable="false">
+<boolean/>
+</property>
+        <property name="British bid" value="0" editable="true">
+            <number min="0" max="500000"/>
+        </property>
+        <property name="AI Bonus Income Percentage" value="0" editable="true">
+            <number min="-100" max="200"/>
+        </property>
+        <property name="AI Bonus Attack" value="0" editable="true">
+            <number min="0" max="6"/>
+        </property>
+        <property name="Americans bid" value="0" editable="true">
+            <number min="0" max="500000"/>
+        </property>
+        <property name="AI Bonus Defense" value="0" editable="true">
+            <number min="0" max="6"/>
+        </property>
+        <property name="AI Bonus Income Flat Rate" value="0" editable="true">
+            <number min="-20" max="40"/>
+        </property>
+        <property name="Germans bid" value="0" editable="true">
+            <number min="0" max="500000"/>
+        </property>
+        <property name="Italians bid" value="0" editable="true">
+            <number min="0" max="500000"/>
+        </property>
+        <property name="Chinese bid" value="0" editable="true">
+            <number min="0" max="500000"/>
+        </property>
+        <property name="Japanese bid" value="0" editable="true">
+            <number min="0" max="500000"/>
+        </property>
+    </propertyList>
+
+</game>

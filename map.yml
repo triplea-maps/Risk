@@ -1,0 +1,5 @@
+map_name: risk
+games:
+- {game_name: Risk, file_name: Risk.xml}
+- {game_name: Risk-Random Alliances, file_name: Risk2.xml}
+version: 0
